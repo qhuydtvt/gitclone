@@ -1,0 +1,33 @@
+/*#blue_tag{
+  background-color: blue;
+}
+.font-30{
+  font-size: 30px;
+}
+h4 {
+  color: red;
+}
+/*.girl-type{
+  background-color: lightblue;
+  padding: 10px;
+  margin: 10px;
+}*/
+.background{
+
+  font-size: 20px ;
+  color: blue;
+}
+
+.background1{
+background-color: gray
+}
+
+.card-girl-type{
+  min-height: 400px!important;
+
+}
+
+.card-girl-img{
+  object-fit: cover;
+  height: 30vw!important;
+}
