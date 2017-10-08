@@ -1,0 +1,33 @@
+{% extends "navbar.html"%}
+{% block navbar %}
+
+<div class="container">
+  <table class="table table-stripped">
+
+    <thead>
+    <th> #</th>
+    <th> Types</th>
+    <th>Description</th>
+    <th>Image </th>
+    <th>Action</th>
+    </thead>
+
+
+    <tbody>
+      {% for book in books %}
+      <tr>
+<td>{{ loop.index }}</td>
+<td>{{ book.name }}</td>
+<td>{{ book.description }}</td>
+<td><a target= "_ blank" href="{{book.image}}">Image Here</a></td>
+<td><a href="/delete_book/{{book.id}}"> Delete <i class="fa fa-snowflake-o" aria-hidden="true"></i></a></td>
+<td><a href="#"> <i class="fa fa-adjust" aria-hidden="true"></i></a></td>
+
+      </tr>
+      {% endfor %}
+
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

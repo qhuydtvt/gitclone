@@ -31,3 +31,8 @@ background-color: gray
   object-fit: cover;
   height: 30vw!important;
 }
+
+.card-book-img{
+
+  height: 15vw!important;
+}

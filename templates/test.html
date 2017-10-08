@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+    {% extends "navbar.html"%}
+
+    {% block navbar %}
+<div class="container">
+  <div class="row">
+    <div class=" col-md-4 col-sm-6 m*-3 ">
+          <div class="card-girl-type card mb-4">
+      <img src="{{ book["image"] }}" alt=""  class="m*-4  img-fluid card-img-top ">
+      <div class="card-body">
+        <h4 class="card-tilte">{{ book["name"] }}</h4>
+
+      <!-- <p>{{ book["description"] }}</p> -->
+    </div>
+
+      </div>
+    </div>
+    <div class="col-md-4">
+      "{{ book["description"] }}"
+    </div>
+  </div>
+</div>
+
+
+
+
+    {% endblock %}
