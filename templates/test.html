@@ -1,28 +1,37 @@
 <!DOCTYPE html>
+{% extends "navbar.html"%}
 
-    {% extends "navbar.html"%}
 
-    {% block navbar %}
-<div class="container">
-  <div class="row">
-    <div class=" col-md-4 col-sm-6 m*-3 ">
-          <div class="card-girl-type card mb-4">
-      <img src="{{ book["image"] }}" alt=""  class="m*-4  img-fluid card-img-top ">
-      <div class="card-body">
-        <h4 class="card-tilte">{{ book["name"] }}</h4>
 
-      <!-- <p>{{ book["description"] }}</p> -->
+{% block navbar %}
+    <div class="container">
+      <div class="row">
+
+
+        {% for book in books %}
+
+          <div class=" col-md-2 col-sm-6 m*-3 ">
+      <button type="submit" class="btn btn-primary">Thẻ </button>
+    <div class="">
+      {% for i in range(10) %}
+      <h6> Khác các cái khác:  {{ book["number"] }}</h6>
+      {% endfor %}
+      <h5>Giống: 100</h5>
     </div>
 
+          </div>
+
+
+          </div>
+          </div>
+
+        {% endfor %}
+        <a href=""></a>
       </div>
     </div>
-    <div class="col-md-4">
-      "{{ book["description"] }}"
-    </div>
-  </div>
-</div>
+{% endblock %}
 
 
 
 
-    {% endblock %}
+</html>

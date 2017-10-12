@@ -8,11 +8,7 @@
       <div class="row">
 
           <div class="col-md-3 col-sm-6 m*-3 background">
-            <label for="height">Tìm kiếm ở đây</label>
 
-            <input type="StringField" name="height" id="height" value="Trang admin thì /admin">
-              <br>
-              <br>
             <p>Danh mục sách</p>
               <button type="submit" class="btn btn-warning">Sách học tập</button>
               <br>
@@ -35,6 +31,10 @@
               <form class="" action="/ChooseBook/{{book.id}}" method="get">
         <button type="submit" class="btn btn-primary">Chi tiet</button>
       </form>
+
+      <form class="" action="{{ url_for ('edit', book_id=book.id)}}" method="get">
+<button type="submit" class="btn btn-primary">Fix</button>
+</form>
             </div>
           </div>
           </div>
